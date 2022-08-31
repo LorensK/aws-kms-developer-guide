@@ -323,7 +323,7 @@ Before using a policy statement like this one, replace the example ARNs with val
 
 ## Troubleshooting KMS key issues in Parameter Store<a name="parameter-store-cmk-fail"></a>
 
-To perform any operation on a secure string parameter, Parameter Store must be able to use the AWS KMS KMS key that you specify for your intended operation\. Most of the Parameter Store failures related to KMS keys are caused by the following problems:
+To perform any operation on a secure string parameter, Parameter Store must be able to use the AWS KMS key that you specify for your intended operation\. Most of the Parameter Store failures related to KMS keys are caused by the following problems:
 + The credentials that an application is using do not have permission to perform the specified action on the KMS key\. 
 
   To fix this error, run the application with different credentials or revise the IAM or key policy that is preventing the operation\. For help with AWS KMS IAM and key policies, see [Authentication and access control for AWS KMS](control-access.md)\.
